@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#000"
+    tools:context="com.example.acer.practice2.AddAddressActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background">
+
+        <FrameLayout
+            android:id="@+id/fl_title"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@drawable/title_bg"
+            android:orientation="horizontal">
+            <ImageView
+                android:id="@+id/iv_back"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/icon_nav_back"/>
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:text="新增地址"/>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_gravity="bottom"
+                android:background="#B2B2B2"/>
+        </FrameLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_below="@id/fl_title"
+            android:background="#FFFFFF"
+            android:layout_marginTop="20dp">
+
+            <View style="@style/view_split"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+
+                android:gravity="center">
+                <TextView
+                    style="@style/tv_add_address_style"
+                    android:text="收货人："/>
+                <EditText
+                    android:id="@+id/et_name"
+                    style="@style/et_add_address_style"
+                    android:maxLength="16"/>
+            </LinearLayout>
+            <View
+                style="@style/view_split"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center">
+                <TextView
+                    style="@style/tv_add_address_style"
+                    android:text="手机号码："/>
+                <EditText
+                    android:id="@+id/et_tel"
+                    style="@style/et_add_address_style"
+                    android:maxLength="11"
+                    android:phoneNumber="true"/>
+            </LinearLayout>
+            <View
+                style="@style/view_split"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center">
+                <TextView
+                    style="@style/tv_add_address_style"
+                    android:text="所在地区："/>
+                <EditText
+                    android:id="@+id/et_address"
+                    style="@style/et_add_address_style"
+                    android:maxLength="50"/>
+            </LinearLayout>
+            <View
+                style="@style/view_split"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginStart="20dp"
+                android:gravity="center">
+                <TextView
+                    style="@style/tv_add_address_style"
+                    android:text="详细地址："/>
+                <EditText
+                    android:id="@+id/et_detail_address"
+                    style="@style/et_add_address_style"
+                    android:maxLength="50"/>
+            </LinearLayout>
+            <View style="@style/view_split"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_save"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginRight="40dp"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:background="@drawable/btn_save_bg"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:text="保存并使用"/>
+
+    </RelativeLayout>
+
+</LinearLayout>
