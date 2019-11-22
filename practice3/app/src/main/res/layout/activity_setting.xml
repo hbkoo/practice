@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8FA"
+    android:orientation="vertical"
+    tools:context="com.example.acer.practice3.SettingActivity">
+
+    <FrameLayout
+        android:id="@+id/fl_title"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <ImageView
+            android:id="@+id/iv_back"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_nav_back"/>
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:textSize="22sp"
+            android:textColor="@color/myWhite"
+            android:text="设置"/>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_gravity="bottom"
+            android:background="#B2B2B2"/>
+    </FrameLayout>
+
+
+    <View style="@style/view_split"
+        android:layout_marginTop="30px"/>
+    <LinearLayout
+        android:id="@+id/ll_change_pwd"
+        style="@style/setting_layout">
+        <ImageView
+            android:src="@drawable/icon_pwd"
+            style="@style/setting_image_size"/>
+        <TextView
+            style="@style/setting_textView"
+            android:text="修改密码"/>
+        <ImageView
+            android:src="@drawable/icon_right"
+            style="@style/setting_image_size"/>
+    </LinearLayout>
+
+
+    <View style="@style/view_split" />
+
+
+    <View style="@style/view_split"
+        android:layout_marginTop="30dp"/>
+    <LinearLayout
+        android:id="@+id/ll_delete_cache"
+        style="@style/setting_layout">
+        <ImageView
+            android:src="@drawable/icon_delete"
+            style="@style/setting_image_size" />
+        <TextView
+            style="@style/setting_textView"
+            android:text="清除缓存"/>
+        <TextView
+            android:id="@+id/tv_cache"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:textSize="16sp"
+            android:textColor="#5A5A5A"
+            android:text="16.19MB"/>
+    </LinearLayout>
+
+    <View style="@style/view_split"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_update"
+        style="@style/setting_layout">
+        <ImageView
+            android:src="@drawable/icon_update"
+            style="@style/setting_image_size"/>
+        <TextView
+            style="@style/setting_textView"
+            android:text="检测新版本"/>
+        <TextView
+            android:id="@+id/tv_check_update"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:textSize="16sp"
+            android:textColor="#D3D3D3"
+            android:text="当前是最新版本"/>
+    </LinearLayout>
+
+    <View style="@style/view_split"/>
+
+
+    <View style="@style/view_split"
+        android:layout_marginTop="30dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_about_us"
+        style="@style/setting_layout">
+        <ImageView
+            android:src="@drawable/icon_person"
+            style="@style/setting_image_size"/>
+        <TextView
+            style="@style/setting_textView"
+            android:text="关于我们"/>
+        <ImageView
+            android:src="@drawable/icon_right"
+            style="@style/setting_image_size"/>
+    </LinearLayout>
+
+    <View style="@style/view_split"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_contact_us"
+        style="@style/setting_layout">
+        <ImageView
+            android:src="@drawable/icon_tel"
+            style="@style/setting_image_size"/>
+        <TextView
+            style="@style/setting_textView"
+            android:text="联系我们"/>
+        <ImageView
+            android:src="@drawable/icon_right"
+            style="@style/setting_image_size"/>
+    </LinearLayout>
+
+
+    <View style="@style/view_split"
+        android:layout_marginLeft="66dp"
+        android:layout_marginStart="66dp"/>
+
+    <LinearLayout
+        android:id="@+id/ll_opinion_return"
+        style="@style/setting_layout">
+        <ImageView
+            android:src="@drawable/icon_edit"
+            style="@style/setting_image_size" />
+        <TextView
+            style="@style/setting_textView"
+            android:text="意见反馈"/>
+        <ImageView
+            android:src="@drawable/icon_right"
+            style="@style/setting_image_size"/>
+    </LinearLayout>
+
+    <View style="@style/view_split" />
+
+</LinearLayout>

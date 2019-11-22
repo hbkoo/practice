@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/iv_item"
+        android:layout_width="150dp"
+        android:layout_height="100dp"
+        android:scaleType="fitXY"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:src="@drawable/ic_launcher_background"/>
+
+    <LinearLayout
+        android:layout_weight="1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp">
+        <TextView
+            android:id="@+id/tv_item_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#494949"
+            android:textSize="16sp"
+            android:text="我们一起来读书"/>
+
+        <TextView
+            android:id="@+id/tv_item_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#494949"
+            android:textSize="16sp"
+            android:text="地点：市图书馆一楼大厅"/>
+        <TextView
+            android:id="@+id/tv_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:textColor="#494949"
+            android:textSize="16sp"
+            android:text="时间：2019年1月6日"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:gravity="center">
+        <ImageView
+            android:src="@drawable/category"
+            android:layout_width="32dp"
+            android:layout_height="32dp" />
+        <TextView
+            android:id="@+id/tv_item_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:textColor="#494949"
+            android:text="读书会"/>
+    </LinearLayout>
+
+</LinearLayout>

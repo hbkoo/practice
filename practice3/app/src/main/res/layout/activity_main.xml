@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.acer.practice3.MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/btn_1"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_bg"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:text="系统弹窗"/>
+            <Button
+                android:id="@+id/btn_2"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_bg"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:text="自定义弹窗" />
+            <Button
+                android:id="@+id/btn_3"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_bg"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:text="日期弹窗" />
+            <Button
+                android:id="@+id/btn_4"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_bg"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:text="时间弹窗" />
+            <Button
+                android:id="@+id/btn_5"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_bg"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:text="进度条弹窗" />
+            <Button
+                android:id="@+id/btn_6"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_bg"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:text="新闻消息" />
+            <Button
+                android:id="@+id/btn_7"
+                android:layout_width="match_parent"
+                android:layout_height="56dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/btn_bg"
+                android:textColor="#fff"
+                android:textSize="16sp"
+                android:text="设置界面" />
+
+
+            <TextView
+                android:id="@+id/tv_date"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"/>
+
+            <TextView
+                android:id="@+id/tv_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp"/>
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
