@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:background="@drawable/background"
+    tools:context="com.example.acer.practice1.LoginActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginStart="50dp"
+            android:layout_marginEnd="50dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_gravity="center_horizontal"
+                android:layout_width="126dp"
+                android:layout_height="87dp"
+                android:src="@drawable/title"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:background="@drawable/edit_bg"
+                android:layout_marginTop="50dp"
+                android:gravity="center_vertical"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp">
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="26dp"
+                    android:src="@drawable/account" />
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="18dp"
+                    android:src="@drawable/login_split" />
+                <EditText
+                    android:id="@+id/user_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:maxLength="20"
+                    android:textSize="18sp"
+                    android:textColorHint="#fff"
+                    android:textColor="#fff"
+                    android:hint="请输入账号"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="30dp"
+                android:background="@drawable/edit_bg"
+                android:gravity="center_vertical"
+                android:paddingHorizontal="30dp">
+                <ImageView
+                    android:layout_width="17dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/passwd" />
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="38dp"
+                    android:layout_marginLeft="18dp"
+                    android:src="@drawable/login_split" />
+                <EditText
+                    android:id="@+id/pwd_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@null"
+                    android:singleLine="true"
+                    android:maxLength="16"
+                    android:textSize="18sp"
+                    android:textColorHint="#fff"
+                    android:textColor="#fff"
+                    android:password="true"
+                    android:hint="请输入密码"/>
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/remember_pwd_cb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#fff"
+                android:layout_gravity="start"
+                android:layout_marginTop="30dp"
+                android:text="记住密码"/>
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="match_parent"
+                android:layout_height="54dp"
+                android:layout_marginTop="30dp"
+                android:textColor="@drawable/login_btn_textcolor"
+                android:background="@drawable/login_btn_bg"
+                android:text="登 录"
+                android:textSize="22sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center">
+                <TextView
+                    android:id="@+id/forget_pwd_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:text="忘记密码"/>
+
+                <ImageView
+                    android:layout_width="1dp"
+                    android:layout_height="24dp"
+                    android:src="@drawable/register_split"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"/>
+
+
+                <TextView
+                    android:id="@+id/register_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="18sp"
+                    android:textColor="#fff"
+                    android:text="用户注册"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+
+
+
+</RelativeLayout>
