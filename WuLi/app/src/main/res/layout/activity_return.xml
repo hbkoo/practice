@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.acer.wuli.collect_feedback.activity.ReturnActivity">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar_return"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        app:title="反馈"
+        app:titleTextColor="@color/colorWhite"
+        android:background="@color/colorPrimary"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/et_return"
+                android:layout_width="match_parent"
+                android:layout_height="300dp"
+                android:background="@drawable/et_return_bg"
+                android:layout_margin="16dp"
+                android:gravity="top"
+                android:padding="8dp"
+                android:hint="@string/string_return_hint"
+                android:lines="10"
+                android:maxLines="10"
+                android:maxLength="200"/>
+
+            <Button
+                android:id="@+id/btn_return"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:layout_margin="16dp"
+                android:text="提    交"
+                style="@style/btn_text_style"
+                android:background="@drawable/btn_bg"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

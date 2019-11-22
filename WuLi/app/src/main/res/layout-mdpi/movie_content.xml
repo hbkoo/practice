@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_movie_preview"
+    android:clickable="true">
+    <!--文字信息-->
+    <TextView
+        android:id="@+id/tv_director"
+        android:text="导演：特拉维斯·奈特"
+        style="@style/tv_movie_info_style" />
+
+
+    <TextView
+        android:id="@+id/tv_type"
+        style="@style/tv_movie_info_style"
+        android:text="类型：克里斯蒂娜·霍德森" />
+
+    <TextView
+        android:id="@+id/tv_actor"
+        style="@style/tv_movie_info_style"
+        android:text="主演：克里斯蒂娜·霍德森" />
+    <TextView
+        android:id="@+id/tv_preview"
+        android:maxLines="1"
+        style="@style/tv_movie_info_style"
+        android:text="简介：本片故事设定在1987年" />
+</LinearLayout>

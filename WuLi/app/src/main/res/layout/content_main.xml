@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--此页面为主页的布局-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".lichenhao.activity.MainActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/ll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal"
+        android:background="#ff5d7a">
+        <TextView
+            android:id="@+id/tv_top_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="首页"
+            android:textSize="40dp"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:textStyle="bold"/>
+    </LinearLayout>
+    <View
+        android:layout_below="@id/ll_bar"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/search_split"/>
+
+    <FrameLayout
+        android:id="@+id/fl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/ll_bar"
+        android:layout_above="@id/ll_button">
+    </FrameLayout>
+    <View
+        android:layout_above="@id/ll_button"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@drawable/search_split"/>
+    <LinearLayout
+        android:id="@+id/ll_button"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/iv_bottom_homepage"
+            android:layout_weight="1"
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@mipmap/homepage_select"/>
+
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/iv_bottom_search"
+            android:layout_weight="1"
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@mipmap/movie"/>
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/iv_bottom_hot"
+            android:layout_weight="1"
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@mipmap/hot"/>
+        <ImageView
+            android:clickable="true"
+            android:id="@+id/iv_bottom_like"
+            android:layout_weight="1"
+            android:layout_marginVertical="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@mipmap/like"/>
+    </LinearLayout>
+
+
+</RelativeLayout>

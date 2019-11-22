@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:id="@+id/head"
+        android:layout_alignParentTop="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardElevation="6dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+                <!--标题栏-->
+                <android.support.v7.widget.Toolbar
+                    android:id="@+id/toolbar_one_comment"
+                    android:layout_width="match_parent"
+                    android:layout_height="?attr/actionBarSize"
+                    android:background="@color/colorMain"
+                    app:title="影评详情"
+                    app:titleTextColor="@color/colorWhite">
+
+                </android.support.v7.widget.Toolbar>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"></LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp">
+
+                    <TextView
+                        android:id="@+id/tv_one_comment_movie_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:maxLines="5"
+                        style="@style/text_selected_enable"
+                        android:text="《大黄蜂》"
+                        android:textSize="22sp" />
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerInParent="true"
+                        android:layout_marginRight="24dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:gravity="center_vertical|right"
+                            android:text="影评人评分" />
+
+                        <RatingBar
+                            android:id="@+id/rb_one_comment_star"
+                            style="@android:style/Widget.DeviceDefault.Light.RatingBar.Indicator"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:numStars="5"
+                            android:stepSize="0.5" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+                <!--影评作者、时间、点赞数-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp">
+
+                    <TextView
+                        android:id="@+id/tv_one_comment_nickname"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        style="@style/text_selected_enable"
+                        android:text="盛世美颜"
+                        android:textSize="16sp" />
+
+                    <TextView
+                        android:id="@+id/tv_one_comment_time"
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center"
+                        android:text="2018年01月03日"
+                        android:textSize="16sp" />
+
+                    <RelativeLayout
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:clickable="true"
+                            android:id="@+id/tv_one_comment_hits"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerInParent="true"
+                            android:paddingLeft="4dp"
+                            android:drawableLeft="@drawable/praise_16"
+                            android:textColor="@drawable/tv_click"
+                            android:gravity="center"
+                            android:text="101" />
+                    </RelativeLayout>
+                </LinearLayout>
+                <!--影评题目-->
+                <TextView
+                    android:id="@+id/tv_one_comment_title"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:paddingLeft="16dp"
+                    android:gravity="center"
+                    style="@style/text_selected_enable"
+                    android:text="下一个被除名的电影别是它"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <!--影评文章内容-->
+        <ScrollView
+            android:layout_below="@id/head"
+            android:layout_alignParentBottom="true"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#fff">
+
+            <TextView
+                android:id="@+id/tv_one_comment_content"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:maxLines="50"
+                android:paddingLeft="16dp"
+                style="@style/text_selected_enable"
+                android:paddingRight="16dp"
+                android:text="       汽车人在塞伯坦星内战中输给霸天虎之后，擎天柱将麾下成员派往宇宙各处，寻找可以重建军队的避风港。大黄蜂被派到地球，在1987年登陆加州时丧失了声音。大黄蜂将自己伪装成一辆大众甲壳虫，被正在经历丧父之痛的少女查莉·沃特森所救。她与大黄蜂成为了朋友，但很快发现他正在被追杀，同时，一个由特工杰克·伯恩斯领导的政府秘密组织“第七区”也盯上了他。在霸天虎成员背叛“第七区”并抓住大黄蜂之后，查理和她的邻居咪莫与特工伯恩斯组队营救大黄蜂，并在霸天虎征服地球之前打败了他们"
+                android:textSize="20sp" />
+        </ScrollView>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF5D7A</color>
+
+    <color name="colorPrimaryDark">#FF5D7A</color>
+    <color name="colorAccent">#FF5D7A</color>
+
+    <color name="myColor">#FF5D7A</color>
+
+    <color name="colorMain">#FF5D7A</color>
+    <color name="colorEnd">#fc77a4</color>
+
+    <color name="colorBlue">#2357ab</color>
+
+    <color name="colorRed">#CC3300</color>
+    <color name="transparent">#00000000</color>
+
+    <color name="colorStar">#FFBB2A</color>
+
+    <color name="colorGrey">#cdcdcd</color>
+    <color name="colorWhite">#ffffff</color>
+
+
+    <color name="lightGray">#ffeeeeee</color>
+    <color name="lightBlack">#66000000</color>
+
+    <color name="colorTheme">#FF5D7A</color>
+
+
+</resources>

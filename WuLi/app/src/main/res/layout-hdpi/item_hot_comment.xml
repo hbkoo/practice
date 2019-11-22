@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+    <ImageView
+        android:layout_alignParentLeft="true"
+        android:layout_width="90dp"
+        android:layout_height="130dp"
+        android:id="@+id/iv_hotmovie" />
+    <LinearLayout
+        android:layout_marginLeft="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_toRightOf="@id/iv_hotmovie">
+        <TextView
+            android:text="下一部被除名的电影千万别是他"
+            android:gravity="top"
+            android:textSize="24sp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tv_hotcommenttitle"/>
+        <LinearLayout
+            android:layout_below="@id/tv_hotcommenttitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:layout_gravity="bottom"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <TextView
+                android:gravity="left"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:id="@+id/tv_hottime"/>
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:id="@+id/iv_hotp"
+                android:src="@drawable/praise"/>
+
+            <TextView
+                android:id="@+id/tv_hotpraisepoint"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>
+

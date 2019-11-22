@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".comments.activity.CommentsActivity">
+    <!--AppBarLayout必须为CoordinatorLayout的子布局-->
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+        <!--CollapsingToolbarLayout必须作为AppBarLayout的直接子布局-->
+        <!--内容折叠后的颜色：contentScrim-->
+        <!--完成折叠后留在界面上：layout_scrollFlags-->
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/collapsing_toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+            app:contentScrim="@color/colorMain"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+            <!--折叠标题的内容-->
+            <include
+                layout="@layout/movie_detail"
+                app:layout_collapseMode="parallax" />
+
+            <!--标题-->
+            <!--layout_collapseMode折叠时的位置-->
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:title=" "
+                app:popupTheme="@style/AppTheme.PopupOverlay"></android.support.v7.widget.Toolbar>
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+
+    <!--与APPBarLayout平级-->
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+        <!--评论布局-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_margin="4dp"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:background="#e6e4e4"
+                android:clickable="true"
+                android:gravity="center_vertical"
+                android:text="影评列表"
+                android:textSize="20sp" />
+            <!--评论列表-->
+            <TextView
+                android:id="@+id/tv_no_comments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                android:paddingTop="16dp"
+                android:text="无影评~"
+                android:visibility="gone"
+                android:textSize="16sp" />
+
+            <ProgressBar
+                android:id="@+id/pb_load_comments"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <com.example.acer.wuli.comments.layout.NestedListView
+                android:id="@+id/lv_comments"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:visibility="gone">
+
+            </com.example.acer.wuli.comments.layout.NestedListView>
+        </LinearLayout>
+    </android.support.v4.widget.NestedScrollView>
+</android.support.design.widget.CoordinatorLayout>
